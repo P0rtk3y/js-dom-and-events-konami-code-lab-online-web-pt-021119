@@ -7,15 +7,15 @@ function init() {
     document.body.addEventListener('keydown', function(e){
       const key = parseInt(e.which || e.detail);
 
-    if (code[index] === key) {
-      index++;
-      if(index === code.length) {
-        alert('Super secret secret code!');
+      if (code[index] === key) {
+        index++;
+        if(index === code.length) {
+          alert('Super secret secret code!');
+          index = 0;
+        }
+      }
+      else {
         index = 0;
       }
-    }
-    else {
-      index = 0;
-    }
-  });
+    });
 }
