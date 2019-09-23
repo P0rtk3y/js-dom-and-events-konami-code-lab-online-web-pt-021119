@@ -10,7 +10,7 @@ function init() {
       if (code[index] === key) {
         index++;
         if(index === code.length) {
-          alert('Super secret secret code!');
+          alert('Hurray');
           index = 0;
         }
       }
